@@ -3,14 +3,14 @@
 }
 
 @font-face {
-  font-family: "MyriadPro";
-  src: url('MyriadPro-Regular.otf');
+  font-family: "Georgia";
+  src: url('Georgia.ttf');
 }
 
 @font-face {
-  font-family: "MyriadPro";
+  font-family: "Georgia";
   font-weight: bold;
-  src: url('MyriadPro-Bold.otf');
+  src: url('Georgia Bold.ttf');
 }
 
 
@@ -19,7 +19,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "MyriadPro";
+  font-family: "Georgia";
   text-align: bottom;
 }
 
@@ -58,7 +58,7 @@ main article p span.format-quote {
 }
 
 .panel-body {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   color: black;

@@ -91,35 +91,10 @@ function initPlayer(id) {
 
 function scrollScene() {
   const progress = mainScene.progress()
-
   if (progress < (1/25) && progress < (3/25)) {
     startVideo('intro')
   } else {
     stopVideo('intro')
-  }
-
-  if (progress > (5/25) && progress < (8/25)) {
-    startVideo('chapitre-2c')
-  } else {
-    stopVideo('chapitre-2c')
-  }
-
-  if (progress > (10/25) && progress < (13/25)) {
-    startVideo('chapitre-21')
-  } else {
-    stopVideo('chapitre-21')
-  }
-
-  if (progress > (18/25) && progress < (20/25)) {
-    startVideo('chapitre-story')
-  } else {
-    stopVideo('chapitre-story')
-  }
-
-  if (progress > (21/25) && progress < (23/25)) {
-    startVideo('chapitre-barode')
-  } else {
-    stopVideo('chapitre-barode')
   }
 }
 
