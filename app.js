@@ -11,15 +11,14 @@ function onYouTubeIframeAPIReady() {
     .fromTo('section#chapitre-2', 1, { y: '100%' }, { y: '0%'}) // From right
     .fromTo('section#chapitre-2a', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-2b', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2bb', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-2c', 1, { y: '100%' }, { y: '0%'}) // From right
     .fromTo('section#chapitre-2cc', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-2d', 1, { y: '100%' }, { y: '0%'}) // From right
     .fromTo('section#chapitre-2dd', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-21', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2aa', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-3', 1, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-3b', 10, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-3bb', 10, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-3bis', 10, { y: '100%' }, { y: '-100%'})// From right
     .fromTo('section#chapitre-5', 1, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-5b', 10, { y: '100%' }, { y: '-100%'})// From right
@@ -94,6 +93,11 @@ function scrollScene() {
     startVideo('intro')
   } else {
     stopVideo('intro')
+  }
+    if (progress < (6/25) && progress < (15/25)) {
+    startVideo('chapitre-2d')
+  } else {
+    stopVideo('chapitre-2d')
   }
 }
 
