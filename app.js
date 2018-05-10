@@ -8,7 +8,6 @@ function onYouTubeIframeAPIReady() {
 
   var wipeAnimation = new TimelineMax()
     .fromTo('section#chapitre-1a', 1, { y: '100%' }, { y: '0%'}) // From bottom
-    .fromTo('section#chapitre-1b', 10, { y: '100%' }, { y: '-100%'}) // From bottom
     .fromTo('section#chapitre-2', 1, { y: '100%' }, { y: '0%'}) // From right
     .fromTo('section#chapitre-2a', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-2b', 1, { y: '100%' }, { y: '0%'}) // From right
