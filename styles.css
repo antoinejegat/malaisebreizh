@@ -159,6 +159,10 @@ text-decoration: underline;
 color: black;
 }
 
+blockquote {
+color: black;
+}
+
 
 /*
 blockquote.fade-up {
