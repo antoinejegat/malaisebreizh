@@ -7,28 +7,27 @@ function onYouTubeIframeAPIReady() {
   var controller = new ScrollMagic.Controller();
 
   var wipeAnimation = new TimelineMax()
-    .fromTo('section#chapitre-1a', 1, { y: '100%' }, { y: '0%'}) // From bottom
-    .fromTo('section#chapitre-2', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2a', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-2b', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2c', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2cc', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-2d', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2dd', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-21', 1, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-3', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-3b', 10, { y: '100%' }, { y: '-100%'})// From right
+    
+    .fromTo('section#chapitre-1a', 10, { y: '100%' }, { y: '0%'}) // From bottom
+    .fromTo('section#chapitre-2', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2a', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2carte', 10, { y: '100%' }, { y: '0%'}) // From bottom
+    .fromTo('section#chapitre-2b', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2c', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2cc', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2d', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2dd', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-21', 10, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-3', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-3b', 10, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-3bb', 10, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-3bis', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-5', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-5b', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-max', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-maxb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-story', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-storyb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-barode', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-barodeb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-credit', 1, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-3bis', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-5', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-5b', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-max', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-maxb', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-story', 10, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-storyb', 10, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-creditb', 10, { y: '100%' }, { y: '0%'})// From right
 
   // create a scene
@@ -94,7 +93,7 @@ function scrollScene() {
   } else {
     stopVideo('intro')
   }
-    if (progress < (6/25) && progress < (15/25)) {
+    if (progress < (10/25) && progress < (24/25)) {
     startVideo('chapitre-2d')
   } else {
     stopVideo('chapitre-2d')
